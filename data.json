@@ -1,0 +1,126 @@
+{
+    "products": {
+        "coffees": [
+            {
+                "name": "Espresso",
+                "description": "Una taza pequeña de café fuerte y concentrado que se hace al forzar agua caliente a través de granos de café finamente molidos.",
+                "price": 2,
+                "img": "/imgs/products-png/espresso.png",
+                "ingredients": [
+                    "Granos de café molidos",
+                    "Agua caliente"
+                ],
+                "preparation": "Un solo espresso se prepara moliendo granos de café finamente y comprimiéndolos en un porta-filtros. Luego, se pasa agua caliente a alta presión a través del café molido en el porta-filtros. El resultado es una pequeña cantidad de café concentrado y fuerte."
+            },
+            {
+                "name": "Latte",
+                "description": "Un café con leche hecho con un solo o doble espresso y leche caliente vaporizada, a menudo decorado con una capa de espuma de leche en la parte superior.",
+                "price": 3,
+                "img": "/imgs/products-png/latte.png",
+                "ingredients": [
+                    "Espresso",
+                    "Leche",
+                    "Espuma de leche"
+                ],
+                "preparation": "Un latte se prepara comenzando con un solo o doble espresso preparado en un porta-filtros. Luego, se vaporiza leche para hacer espuma y se agrega a la taza de espresso. Finalmente, se agrega leche vaporizada para llenar la taza y crear una bebida cremosa y suave."
+            },
+            {
+                "name": "Americano",
+                "description": "Una taza de café americano se hace añadiendo agua caliente a un solo espresso, para crear una taza más grande de café suave.",
+                "price": 2,
+                "img": "/imgs/products-png/americano.png",
+                "ingredients": [
+                    "Espresso",
+                    "Agua caliente"
+                ],
+                "preparation": "Un americano se prepara agregando agua caliente a un solo espresso para crear una taza más grande de café suave. El espresso se prepara primero en un porta-filtros y se agrega agua caliente a la taza, y luego se agrega el espresso a la taza de agua caliente."
+            },
+            {
+                "name": "Cappuccino",
+                "description": "Un café con leche hecho con un solo o doble espresso, leche caliente vaporizada y espuma de leche, a menudo decorado con un toque de canela o cacao en polvo.",
+                "price": 3,
+                "img": "/imgs/products-png/cappuccino.png",
+                "ingredients": [
+                    "Espresso",
+                    "Leche",
+                    "Espuma de leche",
+                    "Canela",
+                    "Cacao en polvo"
+                ],
+                "preparation": "Un cappuccino se prepara comenzando con un solo o doble espresso preparado en un porta-filtros. Luego, se vaporiza leche para hacer espuma y se agrega a la taza de espresso. Finalmente, se agrega leche vaporizada para llenar la taza y se decora con una pizca de canela o cacao en polvo."
+            },
+            {
+                "name": "Mocha",
+                "description": "Un café con leche hecho con un solo o doble espresso, leche vaporizada y chocolate en polvo o salsa de chocolate.",
+                "price": 5,
+                "img": "/imgs/products-png/mocha.png",
+                "ingredients": [
+                    "Espresso",
+                    "Chocolate en polvo",
+                    "Leche",
+                    "Espuma de leche"
+                ],
+                "preparation": "Un mocha se prepara comenzando con un solo o doble espresso preparado en un porta-filtros. Luego, se agrega chocolate en polvo o salsa de chocolate a la taza de espresso y se agrega leche vaporizada para llenar la taza y crear una bebida cremosa y chocolatada."
+            },
+            {
+                "name": "Macchiato",
+                "description": "Un café con leche hecho con un solo espresso y una pequeña cantidad de leche vaporizada, a menudo decorado con una capa de espuma de leche en la parte superior.",
+                "price": 4,
+                "img": "/imgs/products-png/macchiato.png",
+                "ingredients": [
+                    "Espresso",
+                    "Espuma de leche"
+                ],
+                "preparation": "Un macchiato se prepara comenzando con un solo espresso preparado en un porta-filtros. Luego, se vaporiza una pequeña cantidad de leche para hacer espuma y se agrega una pizca de la espuma de leche a la taza de espresso."
+            }
+        ],
+        "tea": [
+            {
+                "name": "Té verde",
+                "description": "El té verde es uno de los tipos de té más populares. Se hace de las hojas de la planta de té Camellia sinensis y se caracteriza por su sabor suave y su bajo contenido de cafeína.",
+                "price": 2,
+                "img": "",
+                "ingredients": [
+                    "Hojas de té verde",
+                    "Agua caliente"
+                ],
+                "preparation": "Para preparar el té verde, se hierve agua en una tetera o en una olla, y se deja reposar durante uno o dos minutos. Luego, se agregan las hojas de té verde a la tetera o al infusor de té y se deja infusionar durante uno o dos minutos más. El té verde se puede servir caliente o frío y se puede endulzar con miel o azúcar si se desea."
+            },
+            {
+                "name": "Té negro",
+                "description": "El té negro es un tipo popular de té que se hace de las hojas de la planta de té Camellia sinensis. Se caracteriza por su sabor fuerte y su alto contenido de cafeína.",
+                "price": 2,
+                "img": "",
+                "ingredients": [
+                    "Hojas de té negro",
+                    "Agua caliente"
+                ],
+                "preparation": "Para preparar el té negro, se hierve agua en una tetera o en una olla, y se deja reposar durante uno o dos minutos. Luego, se agregan las hojas de té negro a la tetera o al infusor de té y se deja infusionar durante tres a cinco minutos."
+            },
+            {
+                "name": "Té de hierbas",
+                "description": "El té de hierbas se hace de una variedad de plantas y hierbas, es naturalmente libre de cafeína y se puede servir caliente o frío.",
+                "price": 4,
+                "img": "",
+                "ingredients": [
+                    "Manzanilla",
+                    "Menta",
+                    "Jengibre"
+                ],
+                "preparation": "Para preparar el té de hierbas, se hierve agua en una tetera o en una olla, y se deja reposar durante uno o dos minutos. Luego, se agregan las hojas de la hierba o la mezcla de hierbas a la tetera o al infusor de té y se deja infusionar durante tres a cinco minutos."
+            }
+        ],
+        "breakfasts": [],
+        "desserts": []
+    },
+    "locals": [
+        {
+            "img": "",
+            "location": ""
+        },
+        {
+            "img": "",
+            "location": ""
+        }
+    ]
+}
