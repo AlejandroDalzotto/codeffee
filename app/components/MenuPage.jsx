@@ -38,10 +38,10 @@ export default function MenuPage() {
         <article className="relative grid justify-items-center">
             <Toaster />
             <div>
-                <h2 className="text-2xl font-semibold leading-6 text-neutral-900 text-center md:text-left">Descubre nuestras deliciosas opciones</h2>
+                <h2 className="text-2xl font-semibold leading-6 text-[#F5DEB3] dark:text-[#FFB74D] text-center md:text-left">Descubre nuestras deliciosas opciones</h2>
                 <div className="my-6">
-                    <p className="text-neutral-800">Ofrecemos una selección de <span className="text-red-600">café, tés, desayunos y postres</span> de alta calidad y deliciosos productos horneados. </p>
-                    <p className="text-neutral-800"> Ven a nuestra cafetería para relajarte y disfrutar de nuestras bebidas y comida recién hechas.</p>
+                    <p className="text-white">Ofrecemos una selección de <span className="text-[#FFB74D]">café, tés, desayunos y postres</span> de alta calidad y deliciosos productos horneados. </p>
+                    <p className="text-white"> Ven a nuestra cafetería para relajarte y disfrutar de nuestras bebidas y comida recién hechas.</p>
                 </div>
             </div>
             <Cart cart={cart} />
@@ -54,8 +54,8 @@ export default function MenuPage() {
                                 onClick={() => setActive(item.name)}
                                 disabled={item.name === active ? true : false}
                                 className={item.name === active
-                                    ? "bg-[#0b7285] text-white ring-2 ring-[#0b7285] rounded py-2 px-4 font-medium w-32 pointer-events-none"
-                                    : "bg-transparent text-[#0b7285] ring-2 ring-[#0b7285] rounded py-2 px-4 font-medium w-32 transition-all hover:bg-[#0b7285] hover:text-white"}
+                                    ? "bg-[#F5DEB3] text-[#5D4037] ring-2 ring-[#F5DEB3] rounded py-2 px-4 font-medium w-32 pointer-events-none"
+                                    : "bg-transparent text-[#5D4037] dark:text-[#A1887F] ring-2 ring-[#F5DEB3] rounded py-2 px-4 font-medium w-32 transition-all hover:bg-[#F5DEB3] hover:text-[#5D4037]"}
                             >
                                 {item.name}
                             </button>

@@ -8,10 +8,10 @@ export default function Cart({ cart }) {
 
     return (
         <>
-            <div className="md:absolute md:top-0 md:right-0">
+            <div className="lg:absolute lg:top-0 lg:right-0">
                 {/* BubbleAlert acá */}
 
-                <button onClick={() => { toggleVisible(!isVisible) }} className="w-fit flex justify-between items-center gap-2 bg-[#0b7285] text-white ring-2 ring-[#0b7285] rounded m-4 p-2 font-medium transition-all hover:bg-transparent hover:text-[#0b7285]">
+                <button onClick={() => { toggleVisible(!isVisible) }} className="w-fit flex justify-between items-center gap-2 bg-[#F5DEB3] text-[#5D4037] ring-2 ring-[#F5DEB3] rounded m-4 p-2 font-medium transition-all hover:bg-transparent hover:text-[#F5DEB3]">
                     <MdShoppingCart />
                     Abrir carro
                 </button>

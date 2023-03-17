@@ -29,8 +29,8 @@ export default function ProductBox({ active, addToCart }) {
                     <p className="w-fit mx-auto text-xl">Precio: {product.price}</p>
 
                     <div className="flex justify-between items-center">
-                        <button onClick={() => { addToCart(product) }} className="bg-[#0b7285] text-white ring-2 ring-[#0b7285] rounded m-4 p-2 font-medium w-32 transition-all hover:bg-transparent hover:text-[#0b7285]">Añadir al carro</button>
-                        <button onClick={() => setModal(!modal)} className="flex justify-between items-center gap-2 bg-[#0b7285] text-white ring-2 ring-[#0b7285] rounded m-4 p-2 font-medium transition-all hover:bg-transparent hover:text-[#0b7285]">
+                        <button onClick={() => { addToCart(product) }} className="bg-[#F5DEB3] text-[#5D4037] ring-2 ring-[#F5DEB3] rounded m-4 p-2 font-medium w-32 transition-all hover:bg-transparent hover:text-[#F5DEB3]">Añadir al carro</button>
+                        <button onClick={() => setModal(!modal)} className="flex justify-between items-center gap-2 bg-[#F5DEB3] text-[#5D4037] ring-2 ring-[#F5DEB3] rounded m-4 p-2 font-medium transition-all hover:bg-transparent hover:text-[#F5DEB3]">
                             <MdInfo />
                             Info
                         </button>

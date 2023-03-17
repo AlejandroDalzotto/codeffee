@@ -4,7 +4,7 @@
 
 .home-bg {
     background-image:
-        linear-gradient(to right, #000, #00000080),
+        linear-gradient(to top right, #000, #00000080),
         url('/imgs/wallpapers/wallpaper_2.jpg');
 }
 
@@ -22,8 +22,4 @@
     display: block;
     width: calc(100% + 1.3px);
     height: 50px;
-}
-
-.custom-shape-divider-bottom-1679004457 .shape-fill {
-    fill: #D4D4D4;
 }
