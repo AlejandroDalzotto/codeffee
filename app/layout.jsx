@@ -10,10 +10,6 @@ const jsans = Jsans({
   subsets: ['latin']
 })
 
-export const metadata = {
-  title: "Codeffe - Inicio"
-}
-
 export default function RootLayout({ children }) {
   return (
     <html lang="es" translate="no">
