@@ -5,13 +5,21 @@ import { useState } from "react"
 import { Toaster, toast } from "sonner"
 import Cart from "./Cart"
 import ProductBox from "./ProductBox"
+import SwitchProductCategorie from "./SwitchProductCategorie"
 
 export default function MenuPage() {
+
+    const DEFAULT_PRODUCTS = {
+        "coffees": "Espresso",
+        "tea": "Té verde",
+    }
 
     const [active, setActive] = useState("Espresso")
     const [cart, setCart] = useState([])
 
-    const { products: { coffees } } = data
+    const [choice, setChoice] = useState("coffees")
+
+    const { products } = data
 
     const addToCart = (product) => {
         if (cart.some(p => p.name === product.name)) {
@@ -34,20 +42,41 @@ export default function MenuPage() {
         }
     }
 
+    const removeToCart = (product) => {
+        if (cart.some(p => p.name === product.name)) {
+            try {
+                const newCart = cart.filter(x => x != product)
+                setCart(newCart);
+                toast.success("Se ha eliminado " + product.name + " del Carro");
+            } catch (error) {
+                toast.error("Se ha producido un error");
+            }
+        }
+    }
+
+    const changeCategorie = (choice) => {
+        setChoice(choice)
+        const newActive = DEFAULT_PRODUCTS[choice]
+        setActive(newActive)
+    }
+
     return (
         <article className="relative grid justify-items-center">
             <Toaster />
             <div>
                 <h2 className="text-2xl font-semibold leading-6 text-[#F5DEB3] dark:text-[#FFB74D] text-center md:text-left">Descubre nuestras deliciosas opciones</h2>
                 <div className="my-6">
-                    <p className="text-white">Ofrecemos una selección de <span className="text-[#FFB74D]">café, tés, desayunos y postres</span> de alta calidad y deliciosos productos horneados. </p>
+                    <p className="text-white">Ofrecemos una selección de <span className="text-[#FFB74D]">cafés, tés, desayunos y postres</span> de alta calidad y deliciosos productos horneados. </p>
                     <p className="text-white"> Ven a nuestra cafetería para relajarte y disfrutar de nuestras bebidas y comida recién hechas.</p>
                 </div>
             </div>
-            <Cart cart={cart} />
-            <div className="flex w-full justify-around items-center min-h-[400px]">
-                <div className="flex flex-col gap-3">
-                    {coffees.map((item, idx) => {
+            <div className="my-4 flex flex-col items-center">
+                <SwitchProductCategorie choice={choice} changeCategorie={changeCategorie} />
+                <Cart cart={cart} removeToCart={removeToCart} />
+            </div>
+            <div className="relative flex w-full justify-around items-center min-h-[400px]">
+                <div className="flex flex-col h-full justify-start gap-3">
+                    {products[choice].map((item, idx) => {
                         return (
                             <button
                                 key={idx}
@@ -63,7 +92,7 @@ export default function MenuPage() {
                     })}
                 </div>
 
-                <ProductBox active={active} addToCart={addToCart} />
+                <ProductBox active={active} addToCart={addToCart} choice={choice} />
 
             </div>
         </article>

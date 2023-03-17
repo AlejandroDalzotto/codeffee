@@ -79,7 +79,7 @@
                 "name": "Té verde",
                 "description": "El té verde es uno de los tipos de té más populares. Se hace de las hojas de la planta de té Camellia sinensis y se caracteriza por su sabor suave y su bajo contenido de cafeína.",
                 "price": 2,
-                "img": "",
+                "img": "/imgs/products-png/latte.png",
                 "ingredients": [
                     "Hojas de té verde",
                     "Agua caliente"
@@ -90,7 +90,7 @@
                 "name": "Té negro",
                 "description": "El té negro es un tipo popular de té que se hace de las hojas de la planta de té Camellia sinensis. Se caracteriza por su sabor fuerte y su alto contenido de cafeína.",
                 "price": 2,
-                "img": "",
+                "img": "/imgs/products-png/latte.png",
                 "ingredients": [
                     "Hojas de té negro",
                     "Agua caliente"
@@ -101,7 +101,7 @@
                 "name": "Té de hierbas",
                 "description": "El té de hierbas se hace de una variedad de plantas y hierbas, es naturalmente libre de cafeína y se puede servir caliente o frío.",
                 "price": 4,
-                "img": "",
+                "img": "/imgs/products-png/latte.png",
                 "ingredients": [
                     "Manzanilla",
                     "Menta",
