@@ -79,7 +79,7 @@
                 "name": "Té verde",
                 "description": "El té verde es uno de los tipos de té más populares. Se hace de las hojas de la planta de té Camellia sinensis y se caracteriza por su sabor suave y su bajo contenido de cafeína.",
                 "price": 2,
-                "img": "/imgs/products-png/latte.png",
+                "img": "/imgs/products-png/te-verde.png",
                 "ingredients": [
                     "Hojas de té verde",
                     "Agua caliente"
@@ -90,7 +90,7 @@
                 "name": "Té negro",
                 "description": "El té negro es un tipo popular de té que se hace de las hojas de la planta de té Camellia sinensis. Se caracteriza por su sabor fuerte y su alto contenido de cafeína.",
                 "price": 2,
-                "img": "/imgs/products-png/latte.png",
+                "img": "/imgs/products-png/te-negro.png",
                 "ingredients": [
                     "Hojas de té negro",
                     "Agua caliente"
@@ -101,7 +101,7 @@
                 "name": "Té de hierbas",
                 "description": "El té de hierbas se hace de una variedad de plantas y hierbas, es naturalmente libre de cafeína y se puede servir caliente o frío.",
                 "price": 4,
-                "img": "/imgs/products-png/latte.png",
+                "img": "/imgs/products-png/te-hierbas.png",
                 "ingredients": [
                     "Manzanilla",
                     "Menta",
@@ -110,8 +110,112 @@
                 "preparation": "Para preparar el té de hierbas, se hierve agua en una tetera o en una olla, y se deja reposar durante uno o dos minutos. Luego, se agregan las hojas de la hierba o la mezcla de hierbas a la tetera o al infusor de té y se deja infusionar durante tres a cinco minutos."
             }
         ],
-        "breakfasts": [],
-        "desserts": []
+        "breakfasts": [
+            {
+                "name": "Acai bowl",
+                "description": "El acai bowl es una opción saludable y deliciosa para el desayuno. Se elabora con una base de acai, que es una fruta brasileña, mezclada con otras frutas como plátano, fresas, kiwi, granola y miel.",
+                "price": 9,
+                "img": "/imgs/products-png/acai.png",
+                "ingredients": [
+                    "Pulpa de acai congelada",
+                    "Plátano",
+                    "Fresas",
+                    "Kiwi",
+                    "Miel",
+                    "Granola"
+                ],
+                "preparation": "Para preparar un acai bowl, mezcla una porción de pulpa de acai congelada, plátano, fresas, kiwi y un poco de miel en una licuadora hasta obtener una mezcla homogénea. Sirve la mezcla en un bol y agrega granola, más frutas frescas y un poco de miel por encima."
+            },
+            {
+                "name": "Omelette con verduras",
+                "description": "El omelette es una opción versátil y nutritiva para el desayuno. Se puede preparar con diferentes verduras como espinacas, champiñones, pimientos, cebolla y tomates, y se puede servir con una tostada de pan integral.",
+                "price": 10,
+                "img": "/imgs/products-png/omelette.png",
+                "ingredients": [
+                    "Huevos",
+                    "Sal",
+                    "Pimienta",
+                    "Aceite",
+                    "Espinacas",
+                    "Champiñones",
+                    "Pimientos",
+                    "Cebolla"
+                ],
+                "preparation": "Para preparar un omelette bate dos o tres huevos en un tazón y sazona con sal y pimienta. Calienta un poco de aceite en una sartén antiadherente y agrega las verduras que desees. Cuando las verduras estén suaves, agrega los huevos batidos a la sartén. Cocina el omelette a fuego medio hasta que esté cocido por ambos lados. Sirve con una tostada de pan integral."
+            },
+            {
+                "name": "Tostada francesa",
+                "description": "La tostada francesa es una opción clásica y reconfortante para el desayuno. Se elabora con pan de molde empapado en huevo batido y leche, y se fríe en una sartén. Se puede servir con frutas frescas, miel o jarabe de arce.",
+                "price": 8,
+                "img": "/imgs/products-png/tostada.png",
+                "ingredients": [
+                    "Pan de molde",
+                    "Huevos",
+                    "Leche",
+                    "Canela",
+                    "Azúcar",
+                    "Aceite o mantequilla",
+                    "Frutas frescas",
+                    "Miel o jarabe de arce"
+                ],
+                "preparation": "En un tazón, bate un huevo y agrega un poco de leche, canela y azúcar. Sumerge una rebanada de pan de molde en la mezcla de huevo y leche, asegurándote de cubrir ambos lados. Calienta un poco de aceite o mantequilla en una sartén y fríe la rebanada de pan hasta que esté dorada por ambos lados. Sirve con frutas frescas, miel o jarabe de arce."
+            }
+        ],
+        "desserts": [
+            {
+                "name": "Cheesecake",
+                "description": "El cheesecake es un postre clásico y delicioso que se puede personalizar de muchas maneras. Se puede servir con una cobertura de frutas frescas, salsa de caramelo o chocolate.",
+                "price": 4,
+                "img": "/imgs/products-png/cheesecake.png",
+                "ingredients": [
+                    "Galletas trituradas",
+                    "Queso crema",
+                    "Azúcar",
+                    "Huevos",
+                    "Vainilla",
+                    "Limón",
+                    "Fresas"
+                ],
+                "preparation": "Se hace mezclando queso crema, azúcar, huevos, vainilla y limón. Se vierte sobre una base de galletas trituradas en un molde y se hornea. Se refrigera antes de servir."
+            },
+            {
+                "name": "Brownies",
+                "description": "Los brownies son un postre indulgente y reconfortante que nunca pasa de moda. Se pueden agregar nueces o chispas de chocolate para darle un toque extra de sabor.",
+                "price": 2,
+                "img": "/imgs/products-png/brownie.png",
+                "ingredients": [
+                    "Chocolate",
+                    "Mantequilla",
+                    "Huevos",
+                    "Azúcar",
+                    "Harina",
+                    "Cacao en polvo",
+                    "Sal",
+                    "Nueces (opcional)"
+                ],
+                "preparation": "Los brownies se hacen mezclando chocolate derretido y mantequilla con huevos y azúcar. Se mezcla con harina, cacao y sal. Se vierte en un molde y se hornea. Se corta en cuadrados una vez enfriado."
+            },
+            {
+                "name": "Carrot cake",
+                "description": "El carrot cake, o pastel de zanahoria, es un postre delicioso y nutritivo que es perfecto para cualquier ocasión. Se puede servir con una cobertura de queso crema y nueces picadas por encima.",
+                "price": 3.5,
+                "img": "/imgs/products-png/carrotcake.png",
+                "ingredients": [
+                    "Zanahorias ralladas",
+                    "Nueces picadas",
+                    "Azúcar",
+                    "Aceite",
+                    "Huevos",
+                    "Vainilla",
+                    "Harina",
+                    "Canela",
+                    "Sal",
+                    "Polvo de hornear",
+                    "Frosting de queso crema"
+                ],
+                "preparation": "Se mezclan huevos, azúcar, aceite, vainilla y nueces picadas. Se mezcla con harina, canela, sal y polvo de hornear. Se vierte en un molde y se hornea. Se decora con frosting de queso crema y nueces picadas."
+            }
+        ]
     },
     "locals": [
         {

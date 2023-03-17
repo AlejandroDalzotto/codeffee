@@ -20,7 +20,7 @@ export default function ProductBox({ active, addToCart, choice }) {
                         alt="product_img"
                         width={150}
                         height={150}
-                        className="h-40 w-40"
+                        className="h-40 w-auto"
                     />}
                 </div>
 

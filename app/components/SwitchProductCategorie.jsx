@@ -5,7 +5,7 @@ function SwitchProductCategorie({ choice, changeCategorie }) {
 
     let [index, setIndex] = useState(0)
 
-    const options = ["coffees", "tea"]
+    const options = ["coffees", "tea", "breakfasts", "desserts"]
 
     return (
         <div className="flex items-center gap-10 my-3">

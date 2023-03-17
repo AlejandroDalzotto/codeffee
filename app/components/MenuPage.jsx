@@ -12,6 +12,8 @@ export default function MenuPage() {
     const DEFAULT_PRODUCTS = {
         "coffees": "Espresso",
         "tea": "Té verde",
+        "breakfasts": "Acai bowl",
+        "desserts": "Cheesecake"
     }
 
     const [active, setActive] = useState("Espresso")
@@ -74,8 +76,8 @@ export default function MenuPage() {
                 <SwitchProductCategorie choice={choice} changeCategorie={changeCategorie} />
                 <Cart cart={cart} removeToCart={removeToCart} />
             </div>
-            <div className="relative flex w-full justify-around items-center min-h-[400px]">
-                <div className="flex flex-col h-full justify-start gap-3">
+            <div className="relative flex flex-col md:flex-row w-full justify-center md:justify-around items-center min-h-[400px]">
+                <div className="grid grid-cols-2 md:grid-cols-1 gap-3">
                     {products[choice].map((item, idx) => {
                         return (
                             <button
