@@ -23,3 +23,9 @@
     width: calc(100% + 1.3px);
     height: 50px;
 }
+
+.music-bg {
+    background-image:
+        linear-gradient(to top right, #000, #00000080),
+        url('/imgs/wallpapers/music-wallpaper.jpg');
+}

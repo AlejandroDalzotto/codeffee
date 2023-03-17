@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
       <body className={jsans.className + " bg-[#CD853F] dark:bg-[#5D4037]"}>
         <ThemeProvider enableSystem={true} attribute="class">
           <Navbar />
-          <div className="max-w-[100vw]">
+          <div className="max-w-[100vw] h-[calc(100%-88px)]">
             {children}
           </div>
           <Footer />
