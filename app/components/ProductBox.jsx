@@ -1,7 +1,7 @@
 import data from "@/data.json" assert {type: "JSON"}
-import Image from "next/image"
-import { useState, Suspense } from "react"
+import { useState } from "react"
 import { MdInfo } from "react-icons/md"
+import ImagePlaceholder from "./ImagePlaceHolder"
 import Modal from "./Modal"
 
 export default function ProductBox({ active, addToCart, choice }) {
@@ -12,23 +12,19 @@ export default function ProductBox({ active, addToCart, choice }) {
     const product = products[choice].find(x => x.name === active)
 
     return (
-        <>
+        <div>
             <div className="flex flex-col items-center">
                 <div className="py-5">
-                    <Suspense fallback={<p>Loading...</p>}>
-                        {product.img && <Image
+                    {product.img &&
+                        <ImagePlaceholder
                             src={product.img}
-                            alt="product_img"
-                            width={150}
-                            height={150}
-                            className="h-40 w-auto"
-                            loading="lazy"
+                            width={180}
+                            height={180}
+                            alt={product.img}
                         />}
-                    </Suspense>
                 </div>
 
                 <div>
-
                     <p className="w-fit mx-auto text-xl">Precio: {product.price} USD</p>
 
                     <div className="flex justify-between items-center">
@@ -42,6 +38,6 @@ export default function ProductBox({ active, addToCart, choice }) {
 
             </div>
             {modal && <Modal setModal={setModal} modal={modal} product={product} />}
-        </>
+        </div>
     )
 }

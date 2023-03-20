@@ -1,4 +1,4 @@
-import { GiMusicalNotes, GiMusicalScore } from "react-icons/gi";
+import { GiMusicalNotes } from "react-icons/gi";
 
 export default function MusicPage() {
     return (
