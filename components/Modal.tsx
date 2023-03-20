@@ -1,4 +1,7 @@
-export default function Modal({ setModal, modal, product }) {
+import { Product } from "@/Models/Product"
+import { Dispatch, SetStateAction } from "react"
+
+export default function Modal({ setModal, modal, product }: { setModal: Dispatch<SetStateAction<boolean>>, modal: boolean, product: Product }) {
     return (
         <div className="relative z-10">
             <div className="fixed inset-0 bg-black/75 bg-opacity-75 transition-opacity backdrop-blur-md"></div>
@@ -18,7 +21,7 @@ export default function Modal({ setModal, modal, product }) {
                                     </div>
                                     <h4 className="text-lg font-semibold leading-6 text-neutral-800">Ingredientes</h4>
                                     <div className="my-4 flex flex-wrap gap-3">
-                                        {product.ingredients.map((item, idx) => {
+                                        {product.ingredients.map((item: string, idx: number) => {
                                             return (
                                                 <p key={idx} className="inline-grid place-content-center text-neutral-50 bg-neutral-900 px-2 py-1 text-sm font-medium shadow-sm w-fit">{item}</p>
                                             )

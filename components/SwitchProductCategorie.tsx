@@ -1,11 +1,10 @@
 import { useState } from "react"
 import { MdKeyboardDoubleArrowLeft, MdKeyboardDoubleArrowRight } from "react-icons/md"
 
-function SwitchProductCategorie({ choice, changeCategorie }) {
+export default function SwitchProductCategorie({ choice, changeCategorie }: { choice: string, changeCategorie: Function }) {
+    let [index, setIndex] = useState<number>(0)
 
-    let [index, setIndex] = useState(0)
-
-    const options = ["coffees", "tea", "breakfasts", "desserts"]
+    const options: string[] = ["coffees", "tea", "breakfasts", "desserts"]
 
     return (
         <div className="flex items-center gap-10 my-3">
@@ -19,7 +18,7 @@ function SwitchProductCategorie({ choice, changeCategorie }) {
             >
                 <MdKeyboardDoubleArrowLeft size={35} />
             </button>
-            <span className="w-28 text-xl font-semibold leading-6 text-[#F5DEB3] dark:text-[#FFB74D] text-center">{choice}</span>
+            <span className="w-28 text-xl font-semibold leading-6 text-[#FFB74D] text-center">{choice}</span>
             <button
                 onClick={() => {
                     setIndex(index += 1)
@@ -33,5 +32,3 @@ function SwitchProductCategorie({ choice, changeCategorie }) {
         </div>
     )
 }
-
-export default SwitchProductCategorie

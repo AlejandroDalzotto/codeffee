@@ -3,29 +3,29 @@
 @tailwind utilities;
 
 .home-bg {
-    background-image:
-        linear-gradient(to top right, #000, #00000080),
-        url('/imgs/wallpapers/wallpaper_2.jpg');
+  background-image:
+    linear-gradient(to top right, #000, #00000080),
+    url('/imgs/wallpapers/wallpaper_2.jpg');
 }
 
 .custom-shape-divider-bottom-1679004457 {
-    position: absolute;
-    bottom: -1px;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
 }
 
 .custom-shape-divider-bottom-1679004457 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 50px;
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 50px;
 }
 
 .music-bg {
-    background-image:
-        linear-gradient(to top right, #000, #00000080),
-        url('/imgs/wallpapers/music-wallpaper.jpg');
+  background-image:
+    linear-gradient(to top right, #000, #00000080),
+    url('/imgs/wallpapers/music-wallpaper.jpg');
 }

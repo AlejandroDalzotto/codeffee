@@ -1,13 +1,13 @@
-"use client"
+"use client";
 
 import Image from 'next/image';
 import { useState } from 'react';
 
-function cn(...classes) {
+function cn(...classes: string[]) {
     return classes.filter(Boolean).join(' ');
 }
 
-export default function ImagePlaceholder({ src, ...props }) {
+export default function ImagePlaceholder({ src, alt }: { src: string, alt: string }) {
     const [isLoading, setLoading] = useState(true);
 
     const handleLoad = () => {
@@ -16,7 +16,8 @@ export default function ImagePlaceholder({ src, ...props }) {
 
     return (
         <Image
-            {...props}
+            width={180}
+            height={180}
             src={src}
             className={cn(
                 'duration-700 ease-in-out',
@@ -24,6 +25,7 @@ export default function ImagePlaceholder({ src, ...props }) {
                     ? 'grayscale blur-md scale-110'
                     : 'grayscale-0 blur-0 scale-100'
             )}
+            alt={alt}
             onLoadingComplete={handleLoad}
         />
     );
