@@ -2,5 +2,13 @@
   "extends": [
     "./node_modules/standard/eslintrc.json",
     "next/core-web-vitals"
+  ],
+  "space-before-function-paren": [
+    "error",
+    {
+      "anonymous": "never",
+      "named": "never",
+      "asyncArrow": "never"
+    }
   ]
 }

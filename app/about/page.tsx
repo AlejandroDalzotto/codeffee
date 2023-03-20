@@ -1,4 +1,4 @@
-export default function page() {
+export default function AboutPage() {
     return (
         <div>Aun en progreso</div>
     )
