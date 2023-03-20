@@ -1,6 +1,6 @@
 import data from "@/data.json" assert {type: "JSON"}
 import Image from "next/image"
-import { useState } from "react"
+import { useState, Suspense } from "react"
 import { MdInfo } from "react-icons/md"
 import Modal from "./Modal"
 
@@ -15,13 +15,16 @@ export default function ProductBox({ active, addToCart, choice }) {
         <>
             <div className="flex flex-col items-center">
                 <div className="py-5">
-                    {product.img && <Image
-                        src={product.img}
-                        alt="product_img"
-                        width={150}
-                        height={150}
-                        className="h-40 w-auto"
-                    />}
+                    <Suspense fallback={<p>Loading...</p>}>
+                        {product.img && <Image
+                            src={product.img}
+                            alt="product_img"
+                            width={150}
+                            height={150}
+                            className="h-40 w-auto"
+                            loading="lazy"
+                        />}
+                    </Suspense>
                 </div>
 
                 <div>

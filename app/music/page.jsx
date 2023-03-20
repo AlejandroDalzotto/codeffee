@@ -19,7 +19,7 @@ export default function MusicPage() {
             <section className="grid justify-items-center px-2 py-20">
                 <article className="container mx-auto max-w-[978px]">
                     <h2 className="flex gap-5 items-center my-6 text-2xl font-semibold leading-6 text-[#F5DEB3] dark:text-[#FFB74D] text-center md:text-left"><GiMusicalNotes size={35} /> Música en Codeffee</h2>
-                    <p className="my-6 text-lg md:text-xl text-center text-[#5D4037] dark:text-[#FFB74D] font-bold">Aquí te presentamos algunas de nuestras listas de reproducción temáticas para que disfrutes de una experiencia musical única en Codeffee.</p>
+                    <p className="my-6 text-lg md:text-xl text-center text-[#5D4037] dark:text-[#FFB74D] font-bold">Aquí te presentamos algunas listas de reproducción temáticas que te recomendamos para que disfrutes de una experiencia musical única en Codeffee.</p>
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
                         <div>
                             <iframe style={{ borderRadius: 12 }} src="https://open.spotify.com/embed/playlist/21KXYY1S0ZALYl0q3uDlUU?utm_source=generator" width="100%" height="352" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
