@@ -17,8 +17,11 @@ export default function ProductBox({ active, addToCart, choice }: { active: stri
         <div className="py-5">
           {product.img &&
             <ImagePlaceholder
+              key={product.img}
               src={product.img}
               alt={product.img}
+              width={180}
+              height={180}
             />}
         </div>
 

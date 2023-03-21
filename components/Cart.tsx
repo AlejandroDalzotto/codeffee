@@ -8,7 +8,7 @@ export default function Cart({ cart, removeToCart }: { cart: Product[], removeTo
   const [isVisible, toggleVisible] = useState<boolean>(false)
 
   return (
-    <>
+    <div>
       <div className="my-4 xl:absolute xl:top-0 xl:right-0">
         {/* BubbleAlert acá */}
 
@@ -21,6 +21,6 @@ export default function Cart({ cart, removeToCart }: { cart: Product[], removeTo
 
       </div>
       {isVisible && <DetailsCart cart={cart} removeToCart={removeToCart} isVisible={isVisible} toggleVisible={toggleVisible} />}
-    </>
+    </div>
   )
 }

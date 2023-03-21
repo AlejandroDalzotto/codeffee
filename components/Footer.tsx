@@ -18,7 +18,7 @@ export default function Footer() {
                     </div>
                     <div className="flex gap-2 items-center my-2">
                         <MdCopyright />
-                        <p>Creada por <Link className="text-rose-600 font-semibold hover:text-neutral-900" href="https://alejandrodalzotto-portfolio.vercel.app/">Alejandro Dalzotto</Link></p>
+                        <Link className="text-rose-600 font-semibold hover:text-neutral-900" href="https://alejandrodalzotto-portfolio.vercel.app/">Creada por Alejandro Dalzotto</Link>
                     </div>
                 </div>
 
