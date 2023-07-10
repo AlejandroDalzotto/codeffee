@@ -1,5 +1,10 @@
 import MenuPage from "@/components/MenuPage";
+import { Metadata } from "next";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: 'Home | Codeffee'
+}
 
 export default function Home() {
   return (
@@ -8,9 +13,9 @@ export default function Home() {
         <div className="container mx-auto flex items-center justify-around h-[calc(100%-88px)] p-4">
           <div className="md:max-w-[50ch]">
             <h1 className="text-5xl text-center md:text-left text-[#FFA07A] font-bold">Codeffee</h1>
-            <p className="my-8 text-white font-medium text-base lg:text-lg">En nuestra cafetería, te ofrecemos un espacio acogedor donde puedes relajarte y disfrutar de un delicioso café que te transportará a otro mundo.</p>
+            <p className="my-8 text-base font-medium text-white lg:text-lg">En nuestra cafetería, te ofrecemos un espacio acogedor donde puedes relajarte y disfrutar de un delicioso café que te transportará a otro mundo.</p>
           </div>
-          <div className="hidden md:block h-80 w-auto">
+          <div className="hidden w-auto md:block h-80">
             <Image src="/imgs/i-heart-coffee.png" width={320} height={320} alt="image" className="invert" />
           </div>
         </div>
@@ -21,7 +26,7 @@ export default function Home() {
           </svg>
         </div>
       </div>
-      <section className="container mx-auto px-2 py-20">
+      <section className="container px-2 py-20 mx-auto">
         <MenuPage />
       </section>
     </main>

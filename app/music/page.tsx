@@ -1,13 +1,18 @@
+import { Metadata } from "next";
 import { GiMusicalNotes } from "react-icons/gi";
+
+export const metadata: Metadata = {
+    title: 'Music | Codeffee'
+}
 
 export default function MusicPage() {
     return (
         <main>
             <div className="relative grid place-content-center music-bg bg-cover bg-no-repeat bg-center h-[calc(100vh-88px)]">
-                <div className="container mx-auto grid justify-items-center p-4">
+                <div className="container grid p-4 mx-auto justify-items-center">
                     <div className="md:max-w-[70ch] lg:-translate-x-44">
                         <h1 className="flex gap-5 items-center text-2xl md:text-4xl text-center md:text-left text-[#FFB74D] font-bold"><GiMusicalNotes size={45} /> Apartado musical <GiMusicalNotes size={45} /></h1>
-                        <p className="my-8 text-white font-medium text-base lg:text-xl">Creemos que la música es una parte esencial de cualquier experiencia. Por eso, hemos elegido una selección de música ambiental que crea un ambiente relajado y acogedor para nuestros clientes.</p>
+                        <p className="my-8 text-base font-medium text-white lg:text-xl">Creemos que la música es una parte esencial de cualquier experiencia. Por eso, hemos elegido una selección de música ambiental que crea un ambiente relajado y acogedor para nuestros clientes.</p>
                     </div>
                 </div>
                 <div className="custom-shape-divider-bottom-1679004457">
@@ -20,7 +25,7 @@ export default function MusicPage() {
                 <article className="container mx-auto max-w-[978px]">
                     <h2 className="flex gap-5 items-center my-6 text-2xl font-semibold leading-6 text-[#FFB74D] text-center md:text-left"><GiMusicalNotes size={35} /> Música en Codeffee</h2>
                     <p className="my-6 text-lg md:text-xl text-center text-[#FFB74D] font-bold">Aquí te presentamos algunas listas de reproducción temáticas que te recomendamos para que disfrutes de una experiencia musical única en Codeffee.</p>
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+                    <div className="grid grid-cols-1 gap-5 lg:grid-cols-2">
                         <div>
                             <iframe style={{ borderRadius: 12 }} src="https://open.spotify.com/embed/playlist/21KXYY1S0ZALYl0q3uDlUU?utm_source=generator" width="100%" height="352" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                         </div>
