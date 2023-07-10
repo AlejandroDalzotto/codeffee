@@ -23,7 +23,7 @@ export default function RootLayout({
       <head />
       <body className={jsans.className}>
         <Navbar />
-        <div className="max-w-[100vw] h-[calc(100%-88px)]">
+        <div className="max-w-[100vw] h-[calc(100%-88px)] mt-20">
           {children}
         </div>
         <Footer />
